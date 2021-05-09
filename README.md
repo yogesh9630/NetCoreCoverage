@@ -45,6 +45,8 @@ In this project has been used the following tools and NuGet Packages to extract 
 ```
 ![reportgenerator](https://github.com/jke94/NetCoreCoverage/blob/dev/Images/ReportGeneratorToolGenerateReport.PNG)
 
+4. Visualize the results with in the browser.
+
 ## Help
 
 Any advise for common problems or issues.
