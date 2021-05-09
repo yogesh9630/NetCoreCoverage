@@ -36,14 +36,14 @@ In this project has been used the following tools and NuGet Packages to extract 
 >dotnet test NetCoreCoverage.sln --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[xunit*]\*" /p:CoverletOutput="../TestResults/"
 
 ```
+![dotnet test](https://github.com/jke94/NetCoreCoverage/blob/dev/Images/dotnetTestsRun.PNG)
 
 3. Report coverage metrics in html format. This command consume the '.\TestResults\coverage.cobertura.xml' file and generate a output folder with a index.hmtl file to visualize the results in a browser.
 
 ```
 >reportgenerator "-reports:TestResults\coverage.cobertura.xml" "-targetdir:TestResults\html" -reporttypes:Html -historydir:HistoriDirectory
 ```
-
-4. 
+![reportgenerator](https://github.com/jke94/NetCoreCoverage/blob/dev/Images/ReportGeneratorToolGenerateReport.PNG)
 
 ## Help
 
