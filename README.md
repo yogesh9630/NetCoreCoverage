@@ -30,7 +30,7 @@ In this project has been used the following tools and NuGet Packages to extract 
 >dotnet build NetCoreCoverage.sln --configuration Release
 ```
 
-#### 2. Run the unit tests from the solution in relase target (from the base repository folder) and generate results. This command will displayed by in the command line the results of the coverage, and futhermore, this command will generate a file (.\TestResults\coverage.cobertura.xml)
+#### 2. Run the unit tests from the solution in relase target (from the base repository folder) and generate results. This command will displayed in the command line the results of the coverage, and futhermore, this command will generate a file (.\TestResults\coverage.cobertura.xml)
 
 ```
 >dotnet test NetCoreCoverage.sln --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[xunit*]\*" /p:CoverletOutput="../TestResults/"
@@ -41,7 +41,7 @@ In this project has been used the following tools and NuGet Packages to extract 
 #### 3. Generate report coverage metrics in html format. This command consume the '.\TestResults\coverage.cobertura.xml' file and generate a output folder with a index.hmtl file to visualize the results in a browser.
 
 ```
->reportgenerator "-reports:TestResults\coverage.cobertura.xml" "-targetdir:TestResults\html" -reporttypes:Html -historydir:HistoriDirectory
+>reportgenerator "-reports:TestResults\coverage.cobertura.xml" "-targetdir:TestResults\html" -reporttypes:Html
 ```
 ![reportgenerator](https://github.com/jke94/NetCoreCoverage/blob/dev/Images/ReportGeneratorToolGenerateReport.PNG)
 
