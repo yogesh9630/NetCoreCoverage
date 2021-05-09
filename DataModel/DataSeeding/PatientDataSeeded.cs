@@ -6,7 +6,7 @@
     public static class PatientDataSeeded
     {
         public static readonly string[] names =
-{
+        {
             "Jack",     "Jasper",   "Kevin",        "Matthew",      "Maverick",     "Nathaniel",
             "Jade",     "Kaylee",   "Kylie",        "Lucy",         "Melanie",      "Naomi",
             "Phoebe",   "Poppy",    "Primerose",    "Jane",         "James",        "John",

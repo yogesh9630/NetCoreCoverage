@@ -16,7 +16,7 @@
             medicalTreatment = new MedicalTreatment();
         }
 
-        [Test]
+        [Test(Description = "When the MedicalTreatment constructor by default is called the return a object not null.")]
         public void TestConstructorCallByDefaultThenReturnObject()
         {
             // Default object value.

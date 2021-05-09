@@ -28,7 +28,7 @@
             "Sancuso"
         };
 
-        internal static MedicalTreatment[] GenerateMedicalTreatment()
+        public static MedicalTreatment[] GenerateRandomMedicalTreatments()
         {
             MedicalTreatment[] arrayPatient = new MedicalTreatment[SharedVariables.NumberOfMedicalTreatments];
 

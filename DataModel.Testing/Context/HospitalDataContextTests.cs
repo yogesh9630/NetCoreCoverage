@@ -1,12 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace DataModel.Testing.Context
+{    
+    using DataModel.Context;
+    using NUnit.Framework;
+    using System;
 
-namespace DataModel.Testing.Context
-{
-    class HospitalDataContextTests
+    [TestFixture]
+    public class HospitalDataContextTests
     {
+
+        private HospitalDataContext hospitalDataContext;
+
+        [SetUp]
+        public void SetUp()
+        {
+            hospitalDataContext = new HospitalDataContext();
+        }
+
+        [Test(Description = "When the HospitalDataContext constructor by default is called the return a object not null.")]
+        public void TestConstructorCallByDefaultThenReturnObject()
+        {
+            // Default object value.
+            Assert.AreNotEqual(null, hospitalDataContext);
+
+            // Default initialization values
+
+            Assert.AreNotEqual(null, hospitalDataContext.Doctors);
+            Assert.AreNotEqual(null, hospitalDataContext.MedicalTreatments);
+            Assert.AreNotEqual(null, hospitalDataContext.Patients);
+        }
     }
 }
