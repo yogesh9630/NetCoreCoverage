@@ -1,5 +1,7 @@
-# NetCoreCoverage
+# Code coverage in .NET 5 (C#)
 A .NET 5 solution example, to get metric coverage from the differents projects of the solution.
+# Medium Post
+[Code coverage in .NET 5 (C#)](https://jke94.medium.com/code-coverage-in-net-core-840bcd96b1e9)
 
 ## Description
 
