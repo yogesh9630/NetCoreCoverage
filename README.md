@@ -11,7 +11,7 @@ In this project has been used the following tools and NuGet Packages to extract 
 
 ## Getting Started
 
-### Dependencies or tool necesaries
+### Dependencies or tool necessaries
 
 * Visual Studio Community 2019
 * .NET 5.0
@@ -24,7 +24,7 @@ In this project has been used the following tools and NuGet Packages to extract 
 
 ### Steps (using dotnet command)
 
-#### 1. Build the solution in relase target (from the base repository folder).
+#### 1. Build the solution in release target (from the base repository folder).
 
 ```
 >dotnet build NetCoreCoverage.sln --configuration Release
@@ -38,7 +38,7 @@ In this project has been used the following tools and NuGet Packages to extract 
 ```
 ![dotnet test](https://github.com/jke94/NetCoreCoverage/blob/dev/Images/dotnetTestsRun.PNG)
 
-#### 3. Report coverage metrics in html format. This command consume the '.\TestResults\coverage.cobertura.xml' file and generate a output folder with a index.hmtl file to visualize the results in a browser.
+#### 3. Generate report coverage metrics in html format. This command consume the '.\TestResults\coverage.cobertura.xml' file and generate a output folder with a index.hmtl file to visualize the results in a browser.
 
 ```
 >reportgenerator "-reports:TestResults\coverage.cobertura.xml" "-targetdir:TestResults\html" -reporttypes:Html -historydir:HistoriDirectory
@@ -50,7 +50,7 @@ In this project has been used the following tools and NuGet Packages to extract 
 
 ## Help
 
-Any advise for common problems or issues.
+Any advice for common problems or issues.
 
 
 ## Authors
@@ -64,4 +64,4 @@ Twitter Profile: [@JaviKarra94](https://twitter.com/JaviKarra94)
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details.
+This project is licensed under the [Mit License](https://github.com/jke94/NetCoreCoverage/blob/dev/LICENSE), see the LICENSE.md file for details.
