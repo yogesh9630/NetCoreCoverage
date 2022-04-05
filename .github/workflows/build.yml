@@ -50,3 +50,5 @@ jobs:
           reportgenerator "-reports:DataModel.Testing/coverage.opencover.xml" "-targetdir:sonarqubecoverage" "-reporttypes:SonarQube"
 
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          
+          
